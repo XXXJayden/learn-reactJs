@@ -28,6 +28,7 @@ class MyComponent extends React.Component {
     }
     handleOnSubmit =(event) => {
         event.preventDefault();
+        
     }
     //JSX
     render() {
@@ -38,6 +39,7 @@ class MyComponent extends React.Component {
                 <button onClick={(event) => {this.handleClick(event)}} >Click me</button>
                 <form onSubmit={(event) => this.handleOnSubmit(event)}>
                     <input type="text"
+                    value={this.state.name}
                     onChange={(event) => this.handleOnChangeInput(event)}
                     ></input>
                     <button> Submit </button>
